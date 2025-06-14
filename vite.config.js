@@ -190,6 +190,7 @@ logger.error = (msg, options) => {
 }
 
 export default defineConfig({
+	base: '/spice/',
 	customLogger: logger,
 	plugins: [
 		...(isDev ? [inlineEditPlugin(), editModeDevPlugin()] : []),
